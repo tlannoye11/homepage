@@ -1,0 +1,19 @@
+/*
+** Rules for the About Me section
+*/
+#aboutSection {
+	max-width: 785px;
+	margin: auto;
+	background-image: url("../img/cuttingboard.png");
+	background-repeat: no-repeat; /* Do not repeat the image */
+	background-position: center; /* Center the image */
+	border-radius: 30px;
+}
+
+#about-container {
+	padding: 25px 150px 25px 50px;
+}
+
+#about-container p {
+	text-align: center;
+}

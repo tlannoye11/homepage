@@ -1,0 +1,103 @@
+/*
+** Rules for the footer section with the social media icons
+*/
+.footer-flex {
+    display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Style the condiment bottles */
+.condiment {
+    height: 162px;
+    width: 56px;
+    padding: 0px 10px;
+
+    -o-transition: transform 0.3s;
+    -ms-transition: transform 0.3s;
+    -moz-transition: transform 0.3s;
+    -webkit-transition: transform 0.3s;
+    transition: transform 0.3s;
+}
+
+.condiment:hover {
+    -o-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    -moz-transform: translateY(-10px);
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
+}
+
+.bbq {
+    background: url("../img/condiments/spiceset.png");
+}
+
+.bbq a {
+    color: dimgray;
+    top: 103px;
+    left: 19px;
+	font-size: 29px;
+}
+
+.ketchup {
+    background: url("../img/condiments/spiceset.png") 322px 0px;
+}
+
+.ketchup a {
+    color: black;
+    top: 110px;
+    left: 19px;
+    font-size: 24px;
+}
+
+.mustard {
+    background: url("../img/condiments/mustard.png");
+    height: 152px;
+    width: 45px;
+    position: relative;
+    top: 10px;
+}
+
+.mustard a {
+    color: red;
+    top: 94px;
+    left: 10px;
+	font-size: 30px;
+}
+
+.hotsauce {
+    background: url("../img/condiments/spiceset.png") 255px 0px;
+}
+
+.hotsauce a {
+    color: #006838;
+    top: 95px;
+    left: 16px;
+	font-size: 30px;
+}
+
+.soysauce {
+    background: url("../img/condiments/soysauce.png");
+}
+
+.soysauce a {
+    color: white;
+    top: 111px;
+    left: 20px;
+	font-size: 26px;
+}
+
+/* Style the Font-Awesome social media icons within the footer */
+.fa-footer {
+    position: relative;
+}
+
+/* Style the copyright information */
+#copyright {
+    padding: 20px 0px;
+}
+
+#copyright i {
+    padding-top: 3px;
+}

@@ -1,0 +1,106 @@
+/*
+/* Rules for the initial icon 
+*/
+.flip-box {
+	background-color: transparent;
+	width: 44px;
+	height: 44px;
+	position: fixed;
+	top: 10px;
+	left: 10px;
+	z-index: 1;
+}
+
+/* This container is needed to position the front and back side */
+.flip-box-inner {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+
+	-o-transition: transform 0.5s;
+	-ms-transition: transform 0.5s;
+	-moz-transition: transform 0.5s;
+	-webkit-transition: transform 0.5s;
+	transition: transform 0.5s;
+	transform-style: preserve-3d;
+}
+
+/* Do a horizontal flip when you move the mouse over the flip box container */
+.flip-box:hover
+.flip-box-inner {
+	-o-transform: rotateY(180deg);
+	-ms-transform: rotateY(180deg);
+	-moz-transform: rotateY(180deg);
+	-webkit-transform: rotateY(180deg);
+	transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+#initialIconFront,
+#initialIconBack {
+	height: 44px;
+	width: 44px;
+	display: block;
+	overflow: visible;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	cursor: pointer;
+	border-radius: 16px;
+	font-weight: bold;
+
+	-o-transition: background 1.2s;
+	-ms-transition: background 1.2s;
+	-moz-transition: background 1.2s;
+	-webkit-transition: background 1.2s;
+	transition: background 1.2s;
+
+	-o-backface-visibility: hidden;
+	-ms-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+/* Style the front side */
+#initialIconFront {
+	background-color: #c75a5a; /* Uncooked color */
+	background-image: url("https://images.freeimages.com/images/large-previews/fb8/minced-meat-2-1547786.jpg"); /* Uncooked burger image */
+	background-position: center; /* Center the image */
+	background-repeat: no-repeat; /* Do not repeat the image */
+	background-size: 55px 55px; /* Resize the background image to cover the entire container */
+	opacity: 0.75;
+}
+
+/* Style the back side */
+#initialIconBack {
+	background-color: #450101; /* Cooked color */
+	background-image: url("../img/burgercooked.png");
+	background-position: center; /* Center the image */
+	background-repeat: no-repeat; /* Do not repeat the image */
+	background-size: 100px 85px; /* Resize the background image to cover the entire container */
+
+	/* Old images */
+	/* background-image: url("https://images.freeimages.com/images/large-previews/497/barbecue-1329713.jpg"); /* Cooked burger image */
+	/* background-image: url("https://i.dlpng.com/static/png/3993334-burger-patty-top-view-png-image-transparent-png-free-download-on-burger-patty-png-820_567_preview.webp"); */
+	
+	-o-transform: rotateY(180deg);
+	-ms-transform: rotateY(180deg);
+	-moz-transform: rotateY(180deg);
+	-webkit-transform: rotateY(180deg);
+	transform: rotateY(180deg);
+}
+
+#initialIconFront span,
+#initialIconBack span {
+	position: absolute;
+	top: 8px;
+	left: 8px;
+	height: 28px;
+	width: 28px;
+	border-radius: 4px;
+	color: #ffffff;
+	font-size: 24px;
+	text-align: center;
+}

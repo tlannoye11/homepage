@@ -1,0 +1,22 @@
+body,
+html {
+	height: 100% /* Used to make the hero images responsive */
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Kreon', serif; /* Grill font */
+}
+
+a {
+	text-decoration: none; /* no underlines */
+}
+
+/* Table cloth gradient */
+.tablecloth {
+	background: white;
+	background-image: linear-gradient(90deg, rgba(200,0,0,.5) 50%, transparent 0), linear-gradient(rgba(200,0,0,.5) 50%, transparent 0);
+	background-size: 30px 30px;
+	padding-top: 20px;
+}

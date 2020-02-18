@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+	<meta charset="UTF-8">
+	<title>Travis Lannoye | Culinary Creator of Delicious Development Dishes</title>
+
+	<!-- FontAwesome does kits now -->
+	<script src="https://kit.fontawesome.com/d68f6626af.js" crossorigin="anonymous"></script>
+
+	<!-- Google font "Kreon", a grill-looking font -->
+	<link rel='stylesheet' href="https://fonts.googleapis.com/css?family=Kreon&display=swap">
+
+	<!-- My style...sheets -->
+	<link rel="stylesheet" href="css/mainstyle.css" type="text/css">
+	<link rel="stylesheet" href="css/headlines.css" type="text/css">
+	<link rel="stylesheet" href="css/initialicon.css" type="text/css">
+	<link rel="stylesheet" href="css/hamburgermenu.css" type="text/css">
+	<link rel="stylesheet" href="css/heropic.css" type="text/css">
+	<link rel="stylesheet" href="css/aboutme.css" type="text/css">
+	<link rel="stylesheet" href="css/appicons.css" type="text/css">
+	<link rel="stylesheet" href="css/jokemodal.css" type="text/css">
+	<link rel="stylesheet" href="css/footer.css" type="text/css">
+
+	<!-- My favicon links -->
+	<link rel="apple-touch-icon" sizes="180x180" href="/img/fav/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/img/fav/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/img/fav/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+</head>
+
+<body>
+	<!--Icon with my initials-->
+	<div id="initialIcon" class="flip-box">
+		<div class="flip-box-inner">
+			<div id="initialIconFront">
+				<a href="#">
+					<span>TL</span>
+				</a>
+			</div>
+			<div id="initialIconBack">
+				<a href="#">
+					<span>TL</span>
+				</a>
+			</div>
+		</div>
+	</div>
+	
+	<!--Hamburger menu...that looks like a hamburger!-->
+	<div id="menuToggle">
+		<input type="checkbox" />
+		<span id="topBun"></span>
+		<span id="meat"></span>
+		<span id="bottomBun"></span>
+		
+		<ul id="menuList">
+			<a href="#aboutSection"><li id="aboutLink">ABOUT</li></a>
+			<a href="#appsSection"><li id="appsLink">APPS</li></a>
+			<a href="#contactSection"><li id="contactLink">CONTACT</li></a>
+		</ul>
+	</div>
+
+	<!--Image of my table-->
+	<div id="hero-pic-wrapper">
+		<div id="hero-pic-text">
+			<h1 id="main-title">Travis Lannoye</h1>
+			<h3 id="sub-title">Culinary Creator of Delicious Development Dishes</h3>
+		</div>
+	</div>
+
+	<div class="tablecloth">
+		<!--About Me section-->
+		<div id="aboutSection">
+			<div id="about-container">
+				<p>My name is Travis.</p>
+				<p>I'm a web developer based in Madison, Wisconsin. I love building websites and applications that have an impact on the lives of others as well as myself. I'm always available for freelance work, and it would be nice to <b>meat</b> you to discuss your main course. I specialize in understanding your needs and hope that your new site will catch fire for your clients.</p>
+				<p>My current list of ingredients includes HTML, CSS, Javascript, and MS SQL. I've also tossed in PHP, JQuery, Bootstrap, React/Redux, and Angular.</p>
+				<p>And remember: a steak pun is a rare medium well done!</p>
+				<p>Looking forward to hearing from you.</p>
+			</div>
+		</div>
+
+		<div id="app-headline-container">
+			<div id="app-headline" class="headline">
+				<span >A few fine apps that I've fried up in the past...</span>
+			</div>
+		</div>
+	
+		<!--Apps section-->
+		<div id="appsSection">
+			<div class="app-flex-container">
+				<!--Calculator-->
+				<div id="calculator" class="app-flex-container app-placemat">
+					<div class="fork"></div>
+					<div class="plate app-circle">
+						<img src="https://freeiconshop.com/wp-content/uploads/edd/calculator-flat.png" 
+							alt="Calculator" 
+							class="app-img app-circle">
+						<div class="app-overlay app-circle">
+							<a href="https://codepen.io/tlannoye11/full/LydLaR"
+								target="_blank"
+								class="app-circle">
+								<span>Calculator</span>
+								<div class="app-uses-group">
+									<i class="fab fa-html5"></i>
+									<i class="fab fa-css3-alt"></i>
+									<i class="fab fa-js"></i>
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="knife"></div>
+				</div>
+				
+				<!--Pomodoro clock-->
+				<div id="pomodoro" class="app-flex-container app-placemat">
+					<div class="fork"></div>
+					<div class="plate app-circle">
+						<img src="https://s-media-cache-ak0.pinimg.com/originals/dc/c1/09/dcc109a3b8750907b8fefa2760f9dfdb.png" 
+							alt="Pomodoro clock" 
+							class="app-img app-circle">
+						<div class="app-overlay app-circle">
+							<a href="https://codepen.io/tlannoye11/full/wdEPxK"
+								target="_blank"
+								class="app-circle">
+								<span>Pomodoro clock</span>
+								<div class="app-uses-group">
+									<i class="fab fa-html5"></i>
+									<i class="fab fa-css3-alt"></i>
+									<i class="fab fa-js"></i>
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="knife"></div>
+				</div>
+	
+				<!--Tic Tac Toe-->
+				<div id="tictactoe" class="app-flex-container app-placemat">
+					<div class="fork"></div>
+					<div class="plate app-circle">
+						<img src="https://cdn.pixabay.com/photo/2016/03/07/20/00/tic-tac-toe-1242914_960_720.png" 
+							alt="Tic Tac Toe" 
+							class="app-img app-circle">
+						<div class="app-overlay app-circle">
+							<a href="https://codepen.io/tlannoye11/full/OmKaPq/"
+								target="_blank"
+								class="app-circle">
+								<span>TicTacToe game</span>
+								<div class="app-uses-group">
+									<i class="fab fa-html5"></i>
+									<i class="fab fa-css3-alt"></i>
+									<i class="fab fa-js"></i>
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="knife"></div>
+				</div>
+				
+				<!--Simon-->
+				<div id="simon" class="app-flex-container app-placemat">
+					<div class="fork"></div>
+					<div class="plate app-circle">
+						<img src="https://image.flaticon.com/icons/svg/447/447526.svg" 
+							alt="Simon" 
+							class="app-img app-circle">
+						<div class="app-overlay app-circle">
+							<a href="https://codepen.io/freeCodeCamp/full/Zypaay/"
+								target="_blank"
+								class="app-circle">
+								<span>Simon game</span>
+								<div class="app-uses-group">
+									<i class="fab fa-html5"></i>
+									<i class="fab fa-css3-alt"></i>
+									<i class="fab fa-js"></i>
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="knife"></div>
+				</div>
+
+				<!--Dad joke-->
+				<div id="dadjoke" class="app-flex-container app-placemat">
+					<div class="fork"></div>
+					<div class="plate app-circle">
+						<img src="img/apps/dadjoke.png" 
+							alt="Dad Joke Jenerator" 
+							class="app-img app-circle">
+						<div class="app-overlay app-circle">
+							<a id="joke-butt-on">
+								<span>Dad Joke Jenerator</span>
+								<div class="app-uses-group">
+									<i class="fab fa-react"></i>
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="knife"></div>
+				</div>
+			</div>
+		</div>
+		
+		<div id="myModal" class="joke-modal"></div>
+
+		<div id="footer-headline-container">
+			<div id="footer-headline" class="headline">
+				<span>Let's create a culinary masterpiece together!</span>
+			</div>
+		</div>
+	
+		<div id="contactSection">
+			<div id="social-group" class="footer-flex">
+				<div class="condiment bbq">
+					<a href="https://www.facebook.com/travis.lannoye" target="_blank" class="fab fa-facebook-f fa-footer"></a>
+				</div>
+				<div class="condiment ketchup">
+					<a href="https://www.linkedin.com/in/travis-lannoye-272a201b/" target="_blank" class="fab fa-linkedin-in fa-footer"></a>
+				</div>
+				<div class="condiment mustard">
+					<a href="https://github.com/tlannoye11" target="_blank" class="fab fa-github-square fa-footer"></a>
+				</div>
+				<div class="condiment hotsauce">
+					<!-- <a href="https://www.freecodecamp.org/tlannoye11" target="_blank" class="fab fa-free-code-camp fa-footer"></a> -->
+					<a href="mailto:travis.lannoye@gmail.com" target="_blank" class="fas fa-envelope-square fa-footer"></a>
+				</div>
+				<div class="condiment soysauce">
+					<a href="https://twitter.com/tlannoye11" target="_blank" class="fab fa-twitter fa-footer"></a>
+				</div>
+			</div>
+			<div id="copyright" class="footer-flex">
+				<span>Simmering slowly since&nbsp;</span>
+				<i class="far fa-copyright"></i>
+				<span>&nbsp;TwentyTwenty</span>
+			</div>
+		</div>
+	</div>
+
+	<!-- This script makes the dad-joke modal appear -->
+	<script src="js/joke-modal.js"></script>
+</body>
+</html>

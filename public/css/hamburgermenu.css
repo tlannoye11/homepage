@@ -1,0 +1,192 @@
+/*
+** Rules for the hamburger menu
+*/
+#menuToggle {
+	height: 36px;
+	width: 36px;
+	display: block;
+
+	position: fixed;
+	top: 20px;
+	right: 20px;
+	
+	z-index: 1;
+	color: #e5cb7a;
+	
+	/* don't let 'em select text */
+	-o-user-select: none;
+	-ms-user-select: none;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	user-select: none;
+}
+
+/* Style the "checkbox" used to activate the hamburger menu */
+#menuToggle input {
+	display: block;
+	position: absolute;
+	height: 32px;
+	width: 32px;
+	top: -7px;
+	right: -7px;
+	cursor: pointer; /* make the burger pointy */
+	opacity: 0; /* hide the checkbox */
+	z-index: 2;
+}
+
+#menuToggle::before {
+	content: '';
+	position: absolute;
+	top: -10px;
+	right: -10px;
+	border-color: #e5cb7a; /* Bun-color */
+	border-style: solid;
+	border-width: 22px;
+	border-radius: 8px;
+}
+
+/* Style the three spans that make up the hamburger */
+#menuToggle span {
+	display: block;
+	position: relative;
+	height: 4px;
+	width: 30px;
+	margin: 0px 0px 6px 9px;
+	border-radius: 3px;
+	z-index: 1;
+	opacity: 0.55s ease;
+
+	-o-transition: transform 0.5s;
+	-ms-transition: transform 0.5s;
+	-moz-transition: transform 0.5s;
+	-webkit-transition: transform 0.5s;
+	transition: transform 0.5s;
+}
+
+/* Color the top span a lettuce color */
+#topBun {
+	background: #32c704;
+}
+
+/* Color the middle span a burger color */
+#meat {
+	background: #450101;
+}
+
+/* Color the bottom span a ketchup color */
+#bottomBun {
+	background: #ec3521;
+}
+
+/* Move the top bun down 10px (its height), then turn it */
+#menuToggle input:checked ~ #topBun {
+	background: #450101;
+
+	-o-transform: translate(0px, 10px) rotate(45deg);
+	-ms-transform: translate(0px, 10px) rotate(45deg);
+	-moz-transform: translate(0px, 10px) rotate(45deg);
+	-webkit-transform: translate(0px, 10px) rotate(45deg);
+	transform: translate(0px, 10px) rotate(45deg);
+}
+
+#menuToggle input:checked ~ #meat {
+	opacity: 0;
+
+	-o-transform: rotate(0deg);
+	-ms-transform: rotate(0deg);
+	-moz-transform: rotate(0deg);
+	-webkit-transform: rotate(0deg);
+	transform: rotate(0deg);
+}
+
+/* Move the bottom bun up 10px (its height), then turn it */
+#menuToggle input:checked ~ #bottomBun {
+	background: #450101;
+
+	-o-transform: translate(0px,-10px) rotate(-45deg);
+	-ms-transform: translate(0px,-10px) rotate(-45deg);
+	-moz-transform: translate(0px,-10px) rotate(-45deg);
+	-webkit-transform: translate(0px,-10px) rotate(-45deg);
+	transform: translate(0px,-10px) rotate(-45deg);
+}
+
+#menuList {
+	display: inline-block;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	height: 100px;
+	width: 100px;
+	margin: -20px -20px 0 0;
+	padding: 50px 90px 0 0;
+	background: transparent;
+	list-style-type: none; /* no bullets, weapon-free zone */
+	
+	/* Shrink the actual menu list until the hamburger is opened */
+	-o-transform: translate(0px,-65px) scale(1,0.00001);
+	-ms-transform: translate(0px,-65px) scale(1,0.00001);
+	-moz-transform: translate(0px,-65px) scale(1,0.00001);
+	-webkit-transform: translate(0px,-65px) scale(1,0.00001);
+	transform: translate(0px,-65px) scale(1,0.00001);
+
+	-o-transition: transform 0.5s, background 0.5s;
+	-ms-transition: transform 0.5s, background 0.5s;
+	-moz-transition: transform 0.5s, background 0.5s;
+	-webkit-transition: transform 0.5s, background 0.5s;
+	transition: transform 0.5s, background 0.5s;
+}
+
+/* Make a larger burger bun shape around the expanded hamburger menu */
+#menuList::before {
+	content: '';
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	bottom: -30px;
+	left: 0;
+	border-radius: 10px;
+	z-index: -1;
+	
+	/* Sesame seeds for the top bun of the expanded menu */
+	background-color: #e5cb7a;
+	background-image: radial-gradient(white 20%, transparent 0);
+	background-size: 15px 12px;
+	background-position: 0 12px, 10px 10px;
+}
+
+#menuList li {
+	padding: 3px 5px;
+	font-size: 22px;
+	text-align: center;
+	width: 170px;
+	color: #ffffff;
+}
+
+#menuList li:hover {
+	font-weight: bold;
+	letter-spacing: 2px;
+}
+
+/* Color the first menu option a lettuce color */
+#aboutLink {
+	background: #32c704;
+}
+
+/* Color the second menu option a burger color */
+#appsLink {
+	background: #450101;
+}
+
+/* Color the third menu option a ketchup color */
+#contactLink {
+	background: #ec3521;
+}
+
+/* Transform the list back to its normal "visible" size when the input is checked */
+#menuToggle input:checked ~ ul {
+	-o-transform: translate3d(0,0,0);
+	-ms-transform: translate3d(0,0,0);
+	-moz-transform: translate3d(0,0,0);
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}

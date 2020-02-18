@@ -1,0 +1,22 @@
+/* Common style for the headlines of different sections */
+.headline {
+	text-align: center;
+	font-size: 40px;
+	font-weight: 700;
+	background: #cccccc;
+	border: 5px solid #4d4d4d;
+	border-radius: 20px;
+	width: 80%;
+	max-width: 750px;
+	padding: 5px 10px;
+	margin: auto;
+	position: relative;
+}
+
+#app-headline {
+    top: 30px;
+}
+
+#footer-headline {
+    top: -30px;
+}

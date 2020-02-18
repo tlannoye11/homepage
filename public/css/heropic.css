@@ -1,0 +1,40 @@
+/*
+** Rules for the hero div
+*/
+#hero-pic-wrapper {
+	height: 900px;
+	width: 100%;
+	
+	/* Cast iron default color */
+	background-color: #696b5e;
+
+	/* User "linear-gradient" to slightly darken the background image and make the text easier to read. */
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/tablestaged.jpg");
+	background-repeat: no-repeat; /* Do not repeat the image */
+	background-attachment: fixed; /* Makes it look like the rest of the page slides over this part. */
+	background-position: center; /* Center the image */
+	background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+#hero-pic-text {
+	color: white;
+	text-align: center;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+
+	/* Center the text */
+	-o-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
+#main-title {
+	font-size: 80px;
+}
+
+#sub-title {
+	font-size: 24px;
+}
