@@ -3,7 +3,7 @@ import Joke from './Joke';
 import Spinner from './Spinner';
 import icanhazdadjoke from '../apis/icanhazdadjoke';
 
-class App extends React.Component {
+class JokeApp extends React.Component {
     state = { 
         joke: null,
         errorMessage: ''
@@ -31,4 +31,4 @@ class App extends React.Component {
     }
 };
 
-export default App;
+export default JokeApp;
