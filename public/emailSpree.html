@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="css/email.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="js/emailSpree.js"></script>
+    </head>
+    <body>
+        <h1>Email me!</h1>
+        <h2>All fields are required...</h2>
+        <form action="https://formspree.io/mpzrypvp" method="POST">
+            <label for="yourname">Name:</label>
+            <input type="text" class="yourname" name="yourname" placeholder="Your name" />
+            
+            <label for="youremail">Email:</label>
+            <input type="text" class="youremail" name="youremail" placeholder="Email address" />
+            
+            <label for="subject">Subject:</label>
+            <input type="text" class="subject" name="subject" placeholder="Subject of email" />
+            
+            <label for="message">Message:</label>
+            <textarea class="message" name="message" placeholder="Enter your message"></textarea>
+
+            <div class="status"></div>
+
+            <button type="submit" class="submit">Send</button>
+        </form>
+    </body>
+</html>
