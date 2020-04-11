@@ -1,7 +1,7 @@
 // Import the React and ReactDOM libraries.
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './components/App';
+import JokeApp from './components/JokeApp';
 
-// Take the completed App component and render it on the screen.
-ReactDOM.render(<App />, document.querySelector('.joke-modal'));
+// Take the completed Dad Joke app component and render it on the screen.
+ReactDOM.render(<JokeApp />, document.querySelector('.joke-modal'));
