@@ -1,5 +1,5 @@
 .container {
-    max-width: 366px;
+    max-width: 366px; /* same as the game-board */
 }
 
 .game-board {
