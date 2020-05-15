@@ -1,0 +1,70 @@
+.container {
+    max-width: 366px;
+}
+
+.game-board {
+    display: flex;
+    flex-wrap: wrap;
+    height: 314px;
+    width: 366px;
+}
+
+#current-player {
+    float: left;
+}
+
+#result {
+    float: right;
+}
+
+.space {
+    height: 50px;
+    width: 50px;
+    background-color: gray;
+    border: 1px solid;
+}
+
+.marker {
+    height: 50px;
+    width: 50px;
+}
+
+.outer-left {
+    border-left: 2px solid;
+}
+
+.outer-right {
+    border-right: 2px solid;
+}
+
+.outer-top {
+    border-top: 2px solid;
+}
+
+.outer-bottom {
+    border-bottom: 2px solid;
+}
+
+.taken {
+    font-family: 'Raleway', sans-serif;
+    font-size: 50px;
+    color: white;
+    border-color: black;
+}
+
+.taken span {
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.player-one {
+    border-radius: 25px;
+    background-color: red;
+}
+
+.player-two {
+    border-radius: 25px;
+    background-color: blue;
+}
